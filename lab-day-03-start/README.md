@@ -76,7 +76,6 @@ src/
 - [ ] **นับ "พบ X รายการ"** ต้องตรงกับจำนวนการ์ดจริง
 - [ ] 🔴 **empty state + ปุ่มล้างตัวกรอง**
 - [ ] 🔴 **3 คนที่ไม่มี `followers` ต้องไม่ขึ้น `NaN`/`undefined`** (แสดง "ยังไม่ทราบจำนวนผู้ติดตาม")
-- [ ] 🔴 **แคปหน้าจอบั๊ก `key={index}` ก่อน/หลังแก้ ใส่ `README.md`** — ตามที่สาธิตสดตอนเลกเชอร์ (บล็อก 1.2) TA จะขอดูก่อนให้ผ่านข้อ `key`
 
 ### Lab B (14:00–14:50) — เช็กก่อนส่ง
 
@@ -87,6 +86,26 @@ src/
 
 ---
 
-## สมาชิกกลุ่ม
+By login name
 
-> TODO: ชื่อ–รหัส 2 คน
+GET /users?login=octocat       # exact match
+GET /users?login_like=oct         # partial match / "contains" (case-sensitive regex)
+
+By followers (it's a number field)
+
+GET /users?followers=98000        # exact
+GET /users?followers_gte=50000    # 50k or more
+GET /users?followers_lte=20000    # 20k or under
+GET /users?followers_gte=20000&followers_lte=100000   # range
+GET /users?_sort=followers&_order=desc   # sort by followers, highest first
+
+
+Backend API URL 
+https://mock-server-xi-one.vercel.app
+
+combine
+/users?login_like=oct&followers_gte=50000
+
+
+ภานุวัฒน์ อุดกันทา 682110185
+สุวรรณชัย ชัยสุวรรณศรี 682110200
