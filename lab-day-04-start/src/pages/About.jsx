@@ -7,9 +7,8 @@ function About() {
         dynamic route <code className="bg-slate-100 px-1 rounded">:id</code> และ query string
       </p>
       <ul className="text-sm text-slate-600 mt-4 space-y-1 list-disc list-inside">
-        <li>ผู้จัดทำ: (ใส่ชื่อ-นามสกุล / รหัสนักศึกษา)</li>
-        <li>กลุ่ม: (ใส่กลุ่ม)</li>
-        <li>ข้อมูล: TheMealDB API</li>
+        <li>สมาชิก: ภานุวัฒน์ อุดกันทา 682110185</li>
+        <li>สมาชิก: สุวรรณชัย ชัยสุวรรณศรี 682110200</li>
       </ul>
     </div>
   )
