@@ -1,0 +1,73 @@
+export const users = [
+    {
+        id: 1,
+        name: "Phanuwat Audkanthar",
+        role: "Frontend Developer",
+        department: "Frontend Engineering",
+        isOnline: true,
+    },
+    {
+        id: 2,
+        name: "Siriporn Charoensuk",
+        role: "Backend Developer",
+        department: "Backend Engineering",
+        isOnline: false,
+    },
+    {
+        id: 3,
+        name: "Nattapong Somboon",
+        role: "Full Stack Developer",
+        department: "Product Engineering",
+        isOnline: true,
+    },
+    {
+        id: 4,
+        name: "Kornkanok Wongsuwan",
+        role: "DevOps Engineer",
+        department: "Infrastructure & Platform",
+        isOnline: true,
+    },
+    {
+        id: 5,
+        name: "Thanapat Rattanaphan",
+        role: "Mobile Developer (iOS/Android)",
+        department: "Mobile Engineering",
+        isOnline: false,
+    },
+    {
+        id: 6,
+        name: "Waranya Srisawat",
+        role: "QA Automation Engineer",
+        department: "Quality Assurance",
+        isOnline: true,
+    },
+    {
+        id: 7,
+        name: "Chaiwat Prasert",
+        role: "Tech Lead",
+        department: "Software Engineering",
+        isOnline: true,
+    },
+    {
+        id: 8,
+        name: "Pimchanok Kaewmanee",
+        role: "Data Engineer",
+        department: "Data & Analytics",
+        isOnline: false,
+    },
+    {
+        id: 9,
+        name: "Kritchapon Bunnak",
+        role: "Cloud / Systems Engineer",
+        department: "Infrastructure & Platform",
+        isOnline: false,
+    },
+    {
+        id: 10,
+        name: "Anucha Suksamran",
+        role: "Security / DevSecOps Engineer",
+        department: "Security & Operations",
+        isOnline: true,
+    },
+];
+
